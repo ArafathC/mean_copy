@@ -29,7 +29,7 @@ Create a controller and render it. The files we'll be using are all under the **
 
 ![](http://i67.tinypic.com/2507879.jpg)
 
-In `main.js`, we've started to define the controller on the todo app.. Go ahead and add the two arguments `$scope` and `$http`:
+In `main.js`, we've started to define the controller on the todo app. Go ahead and add the two arguments `$scope` and `$http`:
 
 ```javascript
 todo.controller('TodoController', function($scope, $http){
@@ -98,7 +98,7 @@ Let's write the client-side code that will interact with that endpoint.
 
 `$http` is a core Angular service that comes with helper functions that facilitate communication with HTTP servers. `$http` takes a single argument - a configuration object - that is used to generate an HTTP request and it returns a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Because the HTTP request is [asynchronous](http://docs.apigee.com/api-baas/asynchronous-vs-synchronous-calls), we use a promise to associate handlers with the eventual success or failure of this HTTP request.
 
-We need to send an HTTP request to the server to gather all of the todos in the database. In `TodoController`, let's make an HTTP GET request:
+We need to send an HTTP request to the server to gather all of the todos in the database. In `TodoController` (in `main.js`), let's make an HTTP GET request:
 
 ```javascript
 $http({
@@ -152,7 +152,7 @@ $http({
   	});
 ```
 
-Go ahead and test the code. You should see a page that contains a single form element, with your placeholder text. (Note: turn off pop-up blocking in your brower) 
+Go ahead and test the code. Make sure you have saved all files before hitting the run button. You should see a page that contains a single form element, with your placeholder text. (Note: turn off pop-up blocking in your browser) 
 
 ![](http://i67.tinypic.com/idy5pe.jpg)
 
@@ -164,6 +164,8 @@ We can see that upon the initial page load, we sent a `GET` request to our own s
 ![](http://i64.tinypic.com/21djrit.jpg)
 
 The `data` property is an array that would normally contain the todo items that exist in the database. As you can see, we currently do not have any todo items in the database.
+
+Don't forget to stop running your code before moving on the following steps.
 
 ### Add items to the database
 Let's write a function that adds an item to the database. This will live as a method on the `$scope` object. Adding the method to the `$scope` object will allow us the ability to call it from within the HTML. 
@@ -240,7 +242,7 @@ You should see a button underneath the form. Add some items, then refresh the pa
 ### Display items
 Now that we've written code that can add items to the database, we should be able to render something useful onto the page.
 
-Add a todo list to `index.html` **below** the closing `div` of the `<div id="todo-form" class="row">`:
+Add a todo list to `index.html` **below** `<div id="todo-form" class="row">`:
 
 ```html
 ...
