@@ -80,7 +80,7 @@ Now back in `index.html` create a form within the `<div class="container">` elem
 
 Let's take a sec to walk through this bit.
 
-In the `<input>` element we have a [directive](https://docs.angularjs.org/api/ng/directive/ngModel) `ng-model='formData.text'`. This binds the value in the input form to the property `text` on the provided model `formData`,  which lives on the `$scope`, which was what we defined earlier in `mainController`. `$scope` is available from within the HTML block that references the controller `<body ng-controller="mainController">`. 
+In the `<input>` element we have a [directive](https://docs.angularjs.org/api/ng/directive/ngModel) `ng-model='formData.text'`. This binds the value in the input form to the property `text` on the provided model `formData`,  which lives on the `$scope`, which was what we defined earlier in `TodoController`. `$scope` is available from within the HTML block that references the controller `<body ng-controller="TodoController">`. 
 
 What do you think will happen if we test our app now?
 
@@ -90,7 +90,7 @@ Soon we'll add a button to the form that will allow us to save the form's data t
 
 ### GET the page
 
-When we load the `mainController`, the first thing we'll do is send an HTTP request to the server in order to get all of the todo items from the database. 
+When we load the `TodoController`, the first thing we'll do is send an HTTP request to the server in order to get all of the todo items from the database. 
 
 In `server.js`, we built a request handler `app.get('/api/todos'...` that returns all of the todos from the database with `response.json(todos)`. 
 
@@ -98,7 +98,7 @@ Let's write the client-side code that will interact with that endpoint.
 
 `$http` is a core Angular service that comes with helper functions that facilitate communication with HTTP servers. `$http` takes a single argument - a configuration object - that is used to generate an HTTP request and it returns a [promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). Because the HTTP request is [asynchronous](http://docs.apigee.com/api-baas/asynchronous-vs-synchronous-calls), we use a promise to associate handlers with the eventual success or failure of this HTTP request.
 
-We need to send an HTTP request to the server to gather all of the todos in the database. In `mainController`, let's make an HTTP GET request:
+We need to send an HTTP request to the server to gather all of the todos in the database. In `TodoController`, let's make an HTTP GET request:
 
 ```javascript
 $http({
@@ -294,7 +294,7 @@ When we click on a checkbox, it will try to invoke `deleteTodo` and pass the cur
 
 Test again. What's going on?
 
-The last thing we need to do is define the `deleteTodo` function in `mainController`:
+The last thing we need to do is define the `deleteTodo` function in `TodoController`:
 
 ```javascript
 $scope.deleteTodo = function(todo_id){

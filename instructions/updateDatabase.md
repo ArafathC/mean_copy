@@ -63,7 +63,7 @@ Now when you click on the text label, it should appear that the text label has c
 
         <a data-ng-click="editing = false; editTodo(todo._id, todo.text)" class="glyphicon glyphicon-ok"></a>
 
-When the user clicks on this icon, it will set the `editing` variable to false, hiding the `<span` element and displaying the `<label` element. It will also invoke a function in the `mainController` (that we haven't built yet) that will send the data to the server and update the database.
+When the user clicks on this icon, it will set the `editing` variable to false, hiding the `<span` element and displaying the `<label` element. It will also invoke a function in the `TodoController` (that we haven't built yet) that will send the data to the server and update the database.
 
 ### Updating the Controller
 
