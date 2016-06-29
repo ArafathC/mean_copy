@@ -1,7 +1,7 @@
 // The name of this module corresponds so the "ng-app" value in line 2 of the HTML
 var todo = angular.module('todo', []);
 
-// CREATE AN ANGULAR CONTROLLER CALLED mainController 
+// CREATE AN ANGULAR CONTROLLER CALLED TodoController 
 // IT TAKES TWO ARGUMENTS, $scope and $http
 todo.controller('TodoController', function($scope, $http){
   $scope.formData = {};
