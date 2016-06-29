@@ -1,5 +1,5 @@
 # Setting up API Routes and Angular Routes
-This part of the workshop should take no more than 75 minutes.
+This part of the workshop should take no more than 30 minutes.
 
 ##What we'll cover in this section
 +   [Creating a RESTful API](#creating-a-restful-api) 
