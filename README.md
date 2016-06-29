@@ -49,7 +49,7 @@ We're going to [clone](https://help.github.com/articles/cloning-a-repository/) t
 
 Once you've copied the link, go back to the SSH terminal in CodeAnywhere and type in the following command followed by pasting the repository link (Ctrl+A then Ctrl+V): 
  
-   `git clone [PASTE REPO LINK HERE]`
+   `git clone` *[PASTE REPO LINK HERE]*
 
 [You may get challenged here to enter your GitHub username and password]
 
@@ -76,6 +76,8 @@ Next, run the following command to verify you have all of the available [branche
  
    `git branch`
 
+Don'r worry about what's going on after you run the command. If you don't get warning information, you are right on your way.
+
 At this point, it should be around 15 minutes into the build part of the workshop. If more than 30 minutes has transpired, check in with the facilitator.
 
 Checkout the starter branch:
@@ -90,7 +92,7 @@ We need to [install dependencies](https://docs.npmjs.com/cli/install) with the f
 ###Set current working directory
 Open your connection's config file by right-clicking on your container and choosing "Config":
 
-![](http://i66.tinypic.com/315bkep.jpg) 
+![](http://i65.tinypic.com/2mpy8up.jpg) 
 
 In your config file, set the current working directory to point to your `mean_adsk` directory:  
 
