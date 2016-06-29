@@ -12,11 +12,11 @@ This part of the workshop should take no more than 60 minutes. If you find yours
 
 `package.json` is used to configure the [npm](https://docs.npmjs.com/getting-started/what-is-npm) package manager. We can list dependencies and set up commands in this file. 
 
-If you haven't already, run the following command:
+Remember that we have run the following command in the previous section:
 
     npm install 
 
-npm will check `package.json` and install Express and Mongoose. You should now see a file structure in your terminal that looks like this: 
+npm checks `package.json` and install Express and Mongoose. You should already see a file structure in your terminal that looks like this: 
 
 ![](http://i68.tinypic.com/10hr8mq.jpg)
 
@@ -29,7 +29,7 @@ In `package.json`, `server.js` is set as our `main` file. This is where we will 
 
 In this course, we'll be building our back-end in one file. For extra credit, you can separate your files into a more modular file structure that is typically used in production applications.
 
-At the top of `server.js`, you should see the code that imports the modules we'll be using to build our application:
+At the top of `server.js` (make sure you choose the `server.js` under the **mean_adsk** folder), you should see the code that imports the modules we'll be using to build our application:
 
 ```javascript
 // Define variables to hold all of the imported modules.
