@@ -30,7 +30,7 @@ Remember that we have run the following command in the previous section:
 
     npm install 
 
-npm checks `package.json` and install Express and Mongoose. You should already see a file structure in your terminal that looks like this: 
+npm checks `package.json` and install Express and Mongoose. If you've already run this command previously, great. But if this is the first time your running the command, you should a file structure in your terminal that looks like this: 
 
 ![](http://i68.tinypic.com/10hr8mq.jpg)
 
