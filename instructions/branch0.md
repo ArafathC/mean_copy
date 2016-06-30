@@ -2,11 +2,25 @@
 This part of the workshop should take no more than 60 minutes. If you find yourself stuck on any one step for more than 10 minutes, ask for help.
 
 ##What we'll cover in this section
++   [Application Structure](#application-structure) 
 +   [Package.json and Installing Dependencies with NPM](#packagejson-and-installing-dependencies-with-npm)
 +   [Node/Express Configuration](#nodeexpress-configuration)
 +   [Connect to database](#connect-to-database)
 +   [Define schema](#define-schema)
 +   [Define model](#define-model)
+  
+## Application Structure
+We're going to keep the folder structure of this application relatively simple. Our Node/Express server code will live in the `server.js` file. 
+
+Here is the folder structure as is:
+ -
+ -    - mean_adsk
+ -    ----- public         <!-- holds our front-end Angular files -->
+ -    --------- main.js    <!-- Angular code -->
+ -    --------- index.html <!-- main HTML view -->
+ -    ----- package.json   <!-- npm configuration file -->
+ -    ----- server.js      <!-- Backend Node file -->
+ -    ----- instructions   <!-- Step by Step guide to building this application-->
 
 ##Package.json and Installing Dependencies with NPM
 
