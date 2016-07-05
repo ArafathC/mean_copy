@@ -1,1 +1,1 @@
-Download this project, extract, and run presentation.html.
+Download this repo and run presentation.html.
